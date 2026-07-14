@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Abdulmajid Musa|portfolio</title>
+    <link rel="stylesheet"href="style.css">
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        nav{
+            background: navy;
+            padding: 15px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .container{
+            padding: 40px;
+        }
+
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        h1{
+            color: navy;
+        }
+
+        p{
+            font-size: 18px;
+        }
+
+        button{
+            background: green;
+            color: white;
+            padding: 12px 25px;
+            border:none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover{
+            background: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <img src="my photo.jpg"alt="Abdulmajid Musa">
+
+    <h1>Abdulmajid Musa</h1>
+
+    <h2>Cybersecurity Expert & Web Developer</h2>
+
+    <p>
+        Welcome to my personal portfolio website.
+        I am passionate about Cybersecurity, web Developer, and making new technologies.
+    </p>
+
+    <a href="about.html">
+        <button>About Me</button>
+    </a>
+
+    <a href="projects.html">
+        <button>My Projects</button>
+    </a>
+
+    <a href="contact.html">
+        <button>Contact Me</button>
+    </a>
+
+    <button onclick="toggleDarkMode()"> Dark Mode</button>
+
+    <h2>My Skills</h2>
+
+    <p>HTML</p>
+    <progress value="90"max="100"></progress>
+
+    <p>CSS</p>
+    <progress value="85"max="100"></progress>
+
+    <p>JavaScript</p>
+    <progress value="60"max="100"></progress>
+
+    <p>CyberSecurity</p>
+    <progress value="75"max="100"></progress>
+
+    <footer>
+        <hr>
+        <p>&copy;2026 Abdulmajid Musa.All Rigths Reserved.</p>
+        <p>Email:musaabdulmajid591@gmail.com</p>
+        <p>Phone: +2347034386761</p>
+
+        <p>
+            <a href="https://github.com/Dabai070"
+            target="_blank">GITHUB</a>|
+            <a href="https://instagram.com/musa667160"
+            target="_blank">INSTAGRAM</a>
+        </p>
+    </footer>
+
+    <script>
+    function toggleDarkMode(){
+        document.body.classList.toggle("dark");
+    }
+    </script>
+    
+</body>
+</html>
+
+
