@@ -76,8 +76,14 @@
     <img src="my photo.jpg"alt="Abdulmajid Musa">
 
     <h1>Abdulmajid Musa</h1>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
 
-    <h2>Cybersecurity Student |Web Developer |Ethical Hacking Enthuslant</h2>
+    <h2 id="typing"></h2>
 
     <p>
         Welcome to my portfolio. I am Abdulmajid Musa,a passionate CyberSecurity student and Web Developer
@@ -140,6 +146,21 @@
     function toggleDarkMode(){
         document.body.classList.toggle("dark");
     }
+    </script>
+
+    <script>
+    const text="Cybersecurity Expert & Web Developer";
+    let i=0;
+
+    function typewriter(){
+        if(i <text.length){
+            document.getElementById("typing").innerHTML+=text.charAt(i);
+            i++;
+            setTimeout(typeWriterx,80);
+        }
+    }
+
+    window.ionload=typewriter;
     </script>
     
 </body>
