@@ -8,13 +8,19 @@ body{
 nav{
     background: navy;
     padding: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a{
     color: white;
     text-decoration: none;
     margin: 15px;
+    padding: 12px 20px;
     font-weight: bold;
+    display: inline-block;
 }
 
 nav a:hover{
