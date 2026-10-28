@@ -262,3 +262,159 @@ progress{
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
+
+.project-card{
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.project-card h3{
+    color: navy;
+    margin-bottom: 10px;
+}
+
+.project-card p{
+    color: #444;
+    line-height: 1.6;
+}
+
+.skill-card{
+    background: #f4f4f4;
+    margin: 10px auto;
+    padding: 15px;
+    max-width: 400px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+.radar-section{
+    text-align: center;
+    margin: 40px auto;
+}
+
+.radar{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: auto;
+    border-radius: 50%;
+    background: #071a07;
+    border: 3px solid #00ff66;
+    overflow: hidden;
+    box-shadow: 0 0 25px #00ff66;
+}
+
+.ring{
+    position: absolute;
+    border: 1px solid rgba(0,255,100,.4);
+    border-radius: 50%;
+}
+
+.ring1{
+    width: 80px;
+    height: 80px;
+    top: 120px;
+    left: 120px;
+}
+
+.ring2{
+    width: 160px;
+    height: 160px;
+    top: 80px;
+    left: 80px;
+}
+
+.ring3{
+    width: 240px;
+    height: 240px;
+    top: 40px;
+    left: 40px;
+}
+
+.ring4{
+    width: 320px;
+    height: 320px;
+    top: 0;
+    left: 0;
+}
+
+.cross{
+    position: absolute;
+    background: rgba(0,255,100,.4);
+}
+
+.horizontal{
+    width: 100%;
+    height: 1px;
+    top: 50%;
+}
+
+.vertical{
+    width: 1px;
+    height: 100%;
+    left: 50%;
+}
+
+.sweep{
+    position: absolute;
+    width: 50%;
+    height: 3px;
+
+    background: linear-gradient(90deg,#00ff66,transparent);
+    top: 50%;
+    left: 50%;
+    transform-origin: left center;
+    animation: scan 3s linear infinite;
+    box-shadow: 0 0 15px #00ff66;
+}
+
+@keyframes scan{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.target{
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #00ff66;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ff66;
+    animation: blink 1s infinite;
+}
+
+.t1{top: 50px;left: 220px;}
+.t2{top: 100px;left: 70px;}
+.t3{top: 200px;left: 250px;}
+.t4{top: 250px;left: 130px;}
+.t5{top: 150px;left: 170px;}
+
+@keyframes blink{
+    0%,100%{
+    opacity: 1;
+}
+
+50%{
+    opacity: 0.2;
+}
+}
+
+#status{
+    color: #00cc44;
+    margin-top: 20px;
+}
